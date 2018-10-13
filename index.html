@@ -14,21 +14,6 @@
   <h1>Pumpkin Pi</h1>
   <iframe src="http://134.173.20.46/8081/?action=stream" width = "640" height = "480"></iframe>
   <button> Shoot water </button>
-  <!--img src = "button_shoot-water.png"/-->
- 
-  <!--h1>What do you want to tell those people?</h1>
-  <form action = ">
-    <fieldset>
-    <label>Type your name: </label>
-    <input type = "text"
-      id = "txtName" />
-    <input type = "button"
-      value = "send a message"
-      onclick = "sayHi()"/>
-    <input type = "text"
-      id = "txtOutput" />
-    </fieldset>
-   </form-->
 
 <div class='wrapper'>
     <form id='nameForm'>
@@ -37,7 +22,14 @@
         <input id='nameField' type='text' maxlength='500'></input>
     </div>
     <div class='form-sub'>
-        <button id='subButton' type='button'>send it</button>
+        <button id='subButton' onclick = "getInput()" type='button'>send it</button>
+	<script>
+		function getInput()
+		{
+			subButton.style.color = 'red';
+		}
+	</script>
+	
     </div>
 </form>
 
