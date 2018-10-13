@@ -6,3 +6,12 @@ function getInput() {
 // use an eventlistener for the event
 var subButton = document.getElementById('subButton');
 subButton.addEventListener('click', getInput, false);
+
+function WriteToFile(passForm) {
+    set fso = CreateObject("Scripting.FileSystemObject"); 
+    set s = fso.CreateTextFile("/home/zoe/Desktop/test.txt", True);
+    s.writeline(result);
+    s.Close();
+10
+ }
+
