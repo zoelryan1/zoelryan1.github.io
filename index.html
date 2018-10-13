@@ -16,8 +16,8 @@
   <iframe src="http://134.173.20.46/8081" width = "640" height = "480"></iframe>
   <button> Shoot water </button>
   <!--img src = "button_shoot-water.png"/-->
-
-  <h1>What do you want to tell those people?</h1>
+ 
+  <!--h1>What do you want to tell those people?</h1>
   <form action = ">
     <fieldset>
     <label>Type your name: </label>
@@ -29,7 +29,22 @@
     <input type = "text"
       id = "txtOutput" />
     </fieldset>
-   </form>
+   </form-->
+
+<div class='wrapper'>
+    <form id='nameForm'>
+    <div class='form-uname'>
+        <lable id='nameLable' for='nameField'>Create a username:</lable>
+        <input id='nameField' type='text' maxlength='25'></input>
+    </div>
+    <div class='form-sub'>
+        <button id='subButton' type='button'>Print your name!</button>
+    </div>
+</form>
+
+<div>
+    <p id='result'></p></div>
+</div>
 
   </a></body></html>
   <script src="javascript/index.js"></script>
