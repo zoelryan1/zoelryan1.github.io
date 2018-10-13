@@ -1,6 +1,3 @@
-def write():
-	file = open("test.txt", "w") 
-	file.write(“Hello World”) 
-	file.close()
-
-write()
+f = open("test.txt", "w+") 
+f.write(“Hello World”) 
+f.close()
