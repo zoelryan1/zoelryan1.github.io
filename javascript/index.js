@@ -12,6 +12,5 @@ function WriteToFile(passForm) {
     set s = fso.CreateTextFile("/home/zoe/Desktop/test.txt", True);
     s.writeline(result);
     s.Close();
-10
  }
 
